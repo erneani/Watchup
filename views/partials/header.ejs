@@ -1,0 +1,29 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <a href="/" class="navbar-brand brand-title">
+    WatchUP <span class="j-color">Jor</span><span class="e-color">nani</span>!
+  </a>
+  <div class="dropdown">
+    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Adicionar uma nova coisa
+    </button>
+    <div class="dropdown-menu p-4" area-labelledby="dropdownMenu">
+      <form action="/add" method="post">
+        <div class="form-group">
+          <label for="">Título da coisa</label>
+          <input type="text" placeholder="Qual o título disso?" class="form-control" name="title">
+        </div>
+        <div class="form-group">
+          <label for="">Do que se trata?</label>
+          <input type="text" class="form-control" name="type" placeholder="É um filme, série..?">
+        </div>
+        <div class="form-group">
+          <label for="">Descrição da coisa</label>
+          <textarea name="description" id="" cols="15" rows="5" class="form-control" placeholder="Descreva a coisa que vocês tem que fazer com detalhes" required></textarea>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="+ Adicionar!" class="btn btn-block btn-outline-danger"/>
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>

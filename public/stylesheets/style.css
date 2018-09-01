@@ -1,0 +1,48 @@
+.main-body {
+  background-color: #212529; }
+  .main-body .container-fluid .main-title {
+    padding-top: 5rem; }
+
+.container-fluid .row {
+  justify-content: center; }
+  .container-fluid .row .watch-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 25rem; }
+    .container-fluid .row .watch-card .btn-delete {
+      float: right; }
+    .container-fluid .row .watch-card .watch-card-title {
+      text-align: center; }
+    .container-fluid .row .watch-card .watch-card-type {
+      color: #e9ecef; }
+    .container-fluid .row .watch-card .watch-card-description {
+      color: #e9ecef;
+      text-align: justify; }
+    .container-fluid .row .watch-card .btn-outline-done {
+      border: 1px solid #007bff;
+      color: #007bff; }
+      .container-fluid .row .watch-card .btn-outline-done:hover {
+        background-color: #007bff;
+        color: #e9ecef; }
+    .container-fluid .row .watch-card .btn-delete-blue {
+      background-color: #007bff;
+      border-color: #007bff; }
+    .container-fluid .row .watch-card .btn-delete-red {
+      background-color: #dc3545; }
+    .container-fluid .row .watch-card .title-done {
+      color: #007bff; }
+    .container-fluid .row .watch-card .title-not-done {
+      color: #dc3545; }
+  .container-fluid .row .card-not-done {
+    border-color: #dc3545; }
+  .container-fluid .row .card-done {
+    border-color: #007bff; }
+
+.container-fluid {
+  color: #e9ecef; }
+  .container-fluid .single-item-title {
+    padding-top: 5rem;
+    color: #e9ecef;
+    justify-content: center; }
+
+/*# sourceMappingURL=style.css.map */

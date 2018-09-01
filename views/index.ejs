@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ./partials/head %>
+  </head>
+  <body>
+    <% include ./partials/header %>
+    <article class="main-body">
+      <div class="container-fluid">
+        <h1 class="main-title">Ei! WatchUP!</h1>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <% for(let i = 0; i<things.length; i++) { %>
+            <div class="watch-card col-12 col-sm-6 col-lg-4 mb-2 mx-2 p-4 <%= things[i].status ? 'card-done' : 'card-not-done' %>">
+              <a href="/delete/<%= things[i]._id %>" class="btn btn-danger btn-delete <%= things[i].status ? 'btn-delete-blue' : 'btn-delete-red' %>">X</a>    
+              <a href="/<%= things[i]._id %>" class="watch-card-title <%= things[i].status ? 'title-done' : 'title-not-done' %>">
+                <h2 class="">
+                  <%= things[i].title %>
+                </h2>
+              </a>
+              <h3 class="watch-card-type">
+                 <%= things[i].type %>
+              </h3>
+              <p class="watch-card-description">
+                <%= things[i].description %>
+              </p>
+              <a href="/update/<%= things[i]._id %>" class="btn btn-block <%= things[i].status ? 'btn-outline-done' : 'btn-outline-danger' %>">
+                <%= things[i].status ? 'Concluído!' : 'Pra fazer!' %>
+              </a>
+            </div>
+          <% } %>
+        </div>
+      </div>
+    </article>
+  </body>
+  <footer>
+    <% include ./partials/footer %>
+  </footer>
+</html>

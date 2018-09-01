@@ -1,0 +1,69 @@
+.main-body
+  background-color: #212529;
+  
+  .container-fluid
+    .main-title
+      padding-top: 5rem
+
+.container-fluid
+  $red: #dc3545
+  $white: #e9ecef
+  $green: #28a745
+  $blue: #007bff
+
+  .row
+    justify-content: center
+
+    .watch-card
+      border: 1px solid #ccc
+      border-radius: 5px
+      max-width: 25rem
+
+      .btn-delete
+        float: right
+
+      .watch-card-title
+        text-align: center
+
+      .watch-card-type
+        color: $white
+
+      .watch-card-description
+        color: $white
+        text-align: justify
+
+      .btn-outline-done
+        border: 1px solid $blue
+        color: $blue
+
+        &:hover 
+          background-color: $blue
+          color: $white
+
+      .btn-delete-blue
+        background-color: $blue
+        border-color: $blue
+
+      .btn-delete-red
+        background-color: $red
+
+      .title-done
+        color: $blue
+
+      .title-not-done
+        color: $red
+
+    .card-not-done
+      border-color: $red
+
+    .card-done
+      border-color: $blue
+
+.container-fluid
+  $white: #e9ecef
+  color: $white
+
+  .single-item-title
+    padding-top: 5rem
+    color: $white
+    justify-content: center

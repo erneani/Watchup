@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ./partials/head %>
+</head>
+<body>
+  <article class="main-body">
+    <% include ./partials/header %>
+    <div class="container-fluid p-4">
+      <h1 class="single-item-title">
+        <%= things.title %>
+      </h1>
+      <h3 class="single-item-type">
+        <%= things.type %>
+      </h3>
+      <p class="single-item-description">
+        <%= things.description %>
+      </p>
+      <div class="single-item-status btn btn-block btn-danger"><%= things.status ? 'Concluído':'Não Concluído' %></div>
+    </div>
+    <% include ./partials/footer %>
+  </article>
+</body>
+</html>
